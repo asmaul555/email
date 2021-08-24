@@ -7,7 +7,7 @@ const emailSchema=new mongoose.Schema({
         required:true,
         validate(value){
             if(!validator.isEmail(value)){
-                 ('provide correct email')
+               return ('provide correct email')
             }
         }
     }
